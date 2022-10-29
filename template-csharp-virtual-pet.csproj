@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+	<ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>template_csharp_virtual_pet</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="template-csharp-virtual-pet-tests\**" />
+    <Compile Remove="virtual-pet-tests\**" />
+    <EmbeddedResource Remove="template-csharp-virtual-pet-tests\**" />
+    <EmbeddedResource Remove="virtual-pet-tests\**" />
+    <None Remove="template-csharp-virtual-pet-tests\**" />
+    <None Remove="virtual-pet-tests\**" />
+  </ItemGroup>
+
+</Project>
